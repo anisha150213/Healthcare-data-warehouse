@@ -1,3 +1,6 @@
+# Anisha Tasnim
+# tasnim@uwm.edu
+
 import tkinter as tk
 from pathlib import Path
 from tkinter import messagebox, simpledialog, ttk
@@ -41,7 +44,7 @@ class ClinicalDataApp:
         self.main_frame.pack(fill="both", expand=True)
         self.configure_styles()
 
-    def run(self) -> None:
+    def run(self):
         try:
             self.users = self.loader.load_users()
         except FileNotFoundError:
@@ -54,7 +57,7 @@ class ClinicalDataApp:
         self.show_login()
         self.root.mainloop()
 
-    def configure_styles(self) -> None:
+    def configure_styles(self):
         self.style = ttk.Style(self.root)
         self.style.theme_use("clam")
         self.style.configure("App.TFrame", background=COLORS["background"])
@@ -93,11 +96,11 @@ class ClinicalDataApp:
         )
         self.style.configure("TEntry", padding=6)
 
-    def clear_frame(self) -> None:
+    def clear_frame(self):
         for widget in self.main_frame.winfo_children():
             widget.destroy()
 
-    def show_login(self) -> None:
+    def show_login(self):
         self.clear_frame()
         card = ttk.Frame(self.main_frame, padding=38, style="Card.TFrame")
         card.place(relx=0.5, rely=0.5, anchor="center")
@@ -117,7 +120,7 @@ class ClinicalDataApp:
         password_entry = ttk.Entry(form, width=34, show="*")
         password_entry.grid(row=1, column=1, sticky="ew", pady=8)
 
-        def attempt_login() -> None:
+        def attempt_login():
             username = username_entry.get().strip()
             password = password_entry.get().strip()
             user = self.users.get(username)
@@ -146,7 +149,7 @@ class ClinicalDataApp:
         password_entry.bind("<Return>", lambda _event: attempt_login())
         username_entry.focus_set()
 
-    def show_menu(self) -> None:
+    def show_menu(self):
         if self.current_user is None:
             self.show_login()
             return
@@ -194,7 +197,7 @@ class ClinicalDataApp:
             buttons.append(("Monitor_revenue", self.action_monitor_revenue))
         return buttons
 
-    def require_system(self) -> ClinicalDataSystem:
+    def require_system(self):
         if self.system is None:
             raise RuntimeError("Clinical data has not been loaded.")
         return self.system
@@ -203,7 +206,7 @@ class ClinicalDataApp:
         if self.current_user:
             self.logger.log(self.current_user.username, self.current_user.role, action, "success", detail)
 
-    def show_text_window(self, title: str, content: str) -> None:
+    def show_text_window(self, title: str, content: str):
         window = tk.Toplevel(self.root)
         window.title(title)
         window.geometry("760x520")
@@ -217,7 +220,7 @@ class ClinicalDataApp:
         scrollbar.pack(side="right", fill="y")
         text.configure(yscrollcommand=scrollbar.set)
 
-    def action_retrieve_patient(self) -> None:
+    def action_retrieve_patient(self):
         patient_id = simpledialog.askstring("Retrieve_patient", "Enter Patient_ID:", parent=self.root)
         if not patient_id:
             return
@@ -228,7 +231,7 @@ class ClinicalDataApp:
         self.show_text_window("Patient information", result)
         self.log_action("retrieve_patient", patient_id)
 
-    def action_add_patient(self) -> None:
+    def action_add_patient(self):
         system = self.require_system()
         window = tk.Toplevel(self.root)
         window.title("Add_patient")
@@ -282,11 +285,11 @@ class ClinicalDataApp:
         ttk.Label(frame, text=f"Provider examples: {provider_examples}", wraplength=560).grid(row=15, column=0, columnspan=2, pady=(10, 2))
         ttk.Label(frame, text=f"Departments: {departments}", wraplength=560).grid(row=16, column=0, columnspan=2, pady=(0, 10))
 
-        def value(key: str) -> str:
+        def value(key: str):
             widget = entries[key]
             return widget.get().strip()  # type: ignore[union-attr]
 
-        def submit() -> None:
+        def submit():
             values = {key: value(key) for key, _label in fields}
             try:
                 message = system.add_patient_or_visit(values)
@@ -299,7 +302,7 @@ class ClinicalDataApp:
 
         ttk.Button(frame, text="Submit", command=submit, style="Primary.TButton").grid(row=17, column=0, columnspan=2, pady=12)
 
-    def action_remove_patient(self) -> None:
+    def action_remove_patient(self):
         patient_id = simpledialog.askstring("Remove_patient", "Enter Patient_ID:", parent=self.root)
         if not patient_id:
             return
@@ -312,7 +315,7 @@ class ClinicalDataApp:
         else:
             messagebox.showwarning("Not found", f"Patient {patient_id} was not found.")
 
-    def action_count_visits(self) -> None:
+    def action_count_visits(self):
         visit_date = simpledialog.askstring("Count_visits", "Enter date (YYYY-MM-DD):", parent=self.root)
         if not visit_date:
             return
@@ -328,7 +331,7 @@ class ClinicalDataApp:
         self.show_text_window("Visit counts", "\n".join(lines))
         self.log_action("count_visits", visit_date)
 
-    def action_view_note(self) -> None:
+    def action_view_note(self):
         patient_id = simpledialog.askstring("View_Note", "Enter Patient_ID:", parent=self.root)
         if not patient_id:
             return
@@ -343,29 +346,29 @@ class ClinicalDataApp:
         self.show_text_window("Clinical notes", result)
         self.log_action("view_note", f"{patient_id} {note_date}")
 
-    def action_identify_eligible(self) -> None:
+    def action_identify_eligible(self):
         ids = self.require_system().identify_eligible_patients()
         self.show_text_window("Eligible patients", f"Eligible patients: {len(ids)}\n\n" + "\n".join(ids))
         self.log_action("identify_eligible_patients", str(len(ids)))
 
-    def action_generate_statistics(self) -> None:
+    def action_generate_statistics(self):
         content = self.require_system().generate_key_statistics(self.output_folder)
         self.show_text_window("Key statistics", content + "\n\nSaved to output/key_statistics.txt")
         self.log_action("generate_key_statistics", "output/key_statistics.txt")
 
-    def action_encounters_per_patient(self) -> None:
+    def action_encounters_per_patient(self):
         result = self.require_system().count_encounters_per_patient()
         self.require_system().export_dict_to_csv("encounters_per_patient.csv", result, self.output_folder)
         self.show_text_window("Encounters per patient", "\n".join(f"{k}: {v}" for k, v in result.items()))
         self.log_action("count_encounters_per_patient", "output/encounters_per_patient.csv")
 
-    def action_encounters_by_department(self) -> None:
+    def action_encounters_by_department(self):
         result = self.require_system().count_encounters_by_department()
         self.require_system().export_dict_to_csv("encounters_by_department.csv", result, self.output_folder)
         self.show_text_window("Encounters by department", "\n".join(f"{k}: {v}" for k, v in result.items()))
         self.log_action("count_encounters_by_department", "output/encounters_by_department.csv")
 
-    def action_monitor_workload(self) -> None:
+    def action_monitor_workload(self):
         workload = self.require_system().monitor_provider_workload()
         self.require_system().export_workload_to_csv(self.output_folder)
         lines = ["Provider workload ranking:", ""]
@@ -373,7 +376,7 @@ class ClinicalDataApp:
         self.show_text_window("Provider workload", "\n".join(lines) + "\n\nSaved to output/provider_workload.csv")
         self.log_action("monitor_provider_workload", "output/provider_workload.csv")
 
-    def action_monitor_revenue(self) -> None:
+    def action_monitor_revenue(self):
         revenue = self.require_system().monitor_department_revenue()
         self.require_system().export_dict_to_csv("department_revenue.csv", revenue, self.output_folder)
         lines = ["Department revenue:", ""]
@@ -384,12 +387,12 @@ class ClinicalDataApp:
         self.show_text_window("Department revenue", "\n".join(lines) + "\n\nSaved to output/department_revenue.csv")
         self.log_action("monitor_department_revenue", "output/department_revenue.csv")
 
-    def action_exit(self) -> None:
+    def action_exit(self):
         if self.current_user:
             self.logger.log(self.current_user.username, self.current_user.role, "exit", "success", "User exited")
         self.root.destroy()
 
 
-def default_paths() -> tuple[str, str]:
+def default_paths():
     base_dir = Path(__file__).resolve().parent.parent
     return str(base_dir / "Data"), str(base_dir / "output")

@@ -6,3 +6,20 @@ timestamp,username,role,action,status,detail
 2026-05-14 16:17:56,alice,clinician,count_encounters_by_department,success,output/encounters_by_department.csv
 2026-05-14 16:17:59,alice,clinician,count_encounters_per_patient,success,output/encounters_per_patient.csv
 2026-05-14 16:18:04,alice,clinician,identify_eligible_patients,success,18
+2026-05-14 21:15:24,nina,nurse,login,success,User logged in
+2026-05-14 21:15:25,nina,nurse,monitor_department_revenue,success,output/department_revenue.csv
+2026-05-14 21:15:29,nina,nurse,monitor_provider_workload,success,output/provider_workload.csv
+2026-05-14 21:15:32,nina,nurse,generate_key_statistics,success,output/key_statistics.txt
+2026-05-14 21:15:35,nina,nurse,count_encounters_by_department,success,output/encounters_by_department.csv
+2026-05-14 21:15:39,nina,nurse,count_encounters_per_patient,success,output/encounters_per_patient.csv
+2026-05-14 21:15:44,nina,nurse,identify_eligible_patients,success,18
+2026-05-14 21:15:53,nina,nurse,exit,success,User exited
+2026-05-14 21:16:10,dave,admin,login,success,User logged in
+2026-05-14 21:16:17,dave,admin,generate_key_statistics,success,output/key_statistics.txt
+2026-05-14 21:16:20,dave,admin,count_encounters_by_department,success,output/encounters_by_department.csv
+2026-05-14 21:16:23,dave,admin,monitor_provider_workload,success,output/provider_workload.csv
+2026-05-14 21:16:26,dave,admin,exit,success,User exited
+2026-05-14 21:16:39,mia,,login,failed,Invalid username or password
+2026-05-14 21:16:48,carol,management,login,success,User logged in
+2026-05-14 21:16:51,carol,management,generate_key_statistics,success,output/key_statistics.txt
+2026-05-14 21:16:53,carol,management,monitor_department_revenue,success,output/department_revenue.csv

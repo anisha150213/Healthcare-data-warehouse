@@ -18,21 +18,21 @@ class Patient:
     encounters: list["Encounter"] = field(default_factory=list)
     notes: list["Note"] = field(default_factory=list)
 
-    def add_encounter(self, encounter: "Encounter") -> None:
+    def add_encounter(self, encounter: "Encounter"):
         self.encounters.append(encounter)
 
-    def add_note(self, note: "Note") -> None:
+    def add_note(self, note: "Note"):
         self.notes.append(note)
 
-    def encounter_count(self) -> int:
+    def encounter_count(self):
         return len(self.encounters)
 
-    def most_recent_encounter(self) -> "Encounter | None":
+    def most_recent_encounter(self):
         if not self.encounters:
             return None
         return max(self.encounters, key=lambda item: item.date_value())
 
-    def matches_eligibility_criteria(self) -> bool:
+    def matches_eligibility_criteria(self):
         return (
             18 <= self.age <= 45
             and self.gender.lower() in {"female", "male"}
@@ -41,7 +41,7 @@ class Patient:
             and self.a1c >= 5.7
         )
 
-    def to_csv_row(self) -> dict[str, object]:
+    def to_csv_row(self):
         return {
             "patient_id": self.patient_id,
             "age": self.age,
@@ -62,13 +62,13 @@ class Provider:
     department_id: str
     encounters: list["Encounter"] = field(default_factory=list)
 
-    def add_encounter(self, encounter: "Encounter") -> None:
+    def add_encounter(self, encounter: "Encounter"):
         self.encounters.append(encounter)
 
-    def encounter_count(self) -> int:
+    def encounter_count(self):
         return len(self.encounters)
 
-    def to_csv_row(self) -> dict[str, object]:
+    def to_csv_row(self):
         return {
             "provider_id": self.provider_id,
             "name": self.name,
@@ -84,13 +84,13 @@ class Department:
     location: str
     encounters: list["Encounter"] = field(default_factory=list)
 
-    def add_encounter(self, encounter: "Encounter") -> None:
+    def add_encounter(self, encounter: "Encounter"):
         self.encounters.append(encounter)
 
-    def encounter_count(self) -> int:
+    def encounter_count(self):
         return len(self.encounters)
 
-    def to_csv_row(self) -> dict[str, object]:
+    def to_csv_row(self):
         return {
             "department_id": self.department_id,
             "name": self.name,
@@ -112,22 +112,22 @@ class Encounter:
     procedures: list["Procedure"] = field(default_factory=list)
     notes: list["Note"] = field(default_factory=list)
 
-    def date_value(self) -> datetime:
+    def date_value(self):
         try:
             return datetime.strptime(self.encounter_date, "%Y-%m-%d")
         except ValueError:
             return datetime.min
 
-    def add_procedure(self, procedure: "Procedure") -> None:
+    def add_procedure(self, procedure: "Procedure"):
         self.procedures.append(procedure)
 
-    def add_note(self, note: "Note") -> None:
+    def add_note(self, note: "Note"):
         self.notes.append(note)
 
     def total_cost(self) -> float:
         return sum(procedure.cost for procedure in self.procedures)
 
-    def to_csv_row(self) -> dict[str, object]:
+    def to_csv_row(self):
         return {
             "encounter_id": self.encounter_id,
             "patient_id": self.patient_id,
@@ -148,7 +148,7 @@ class Procedure:
     cost: float
     encounter: Encounter | None = None
 
-    def to_csv_row(self) -> dict[str, object]:
+    def to_csv_row(self):
         return {
             "procedure_id": self.procedure_id,
             "encounter_id": self.encounter_id,
@@ -170,7 +170,7 @@ class Note:
     patient: Patient | None = None
     encounter: Encounter | None = None
 
-    def to_csv_row(self) -> dict[str, object]:
+    def to_csv_row(self):
         return {
             "note_id": self.note_id,
             "patient_id": self.patient_id,

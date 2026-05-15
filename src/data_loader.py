@@ -16,7 +16,7 @@ PROCEDURE_FIELDS = ["procedure_id", "encounter_id", "patient_id", "procedure_cod
 NOTE_FIELDS = ["note_id", "patient_id", "encounter_id", "note_date", "note_type", "note_text"]
 
 
-def to_bool(value: object) -> bool:
+def to_bool(value: object):
     return str(value).strip().lower() in {"true", "1", "yes", "y"}
 
 
@@ -27,7 +27,7 @@ def to_int(value: object, default: int = 0) -> int:
     return int(float(text))
 
 
-def to_float(value: object, default: float | None = None) -> float | None:
+def to_float(value: object, default: float | None = None):
     text = str(value).strip()
     if not text:
         return default
@@ -37,13 +37,13 @@ def to_float(value: object, default: float | None = None) -> float | None:
 class DataLoader:
     """Loads and saves all required project CSV files from the Data folder."""
 
-    def __init__(self, data_folder: str = "Data") -> None:
+    def __init__(self, data_folder: str = "Data"):
         self.data_folder = Path(data_folder)
 
     def path(self, filename: str) -> Path:
         return self.data_folder / filename
 
-    def load_users(self) -> dict[str, User]:
+    def load_users(self):
         users: dict[str, User] = {}
         with open(self.path("credentials.csv"), newline="", encoding="utf-8") as file:
             for row in csv.DictReader(file):
@@ -51,14 +51,7 @@ class DataLoader:
                 users[user.username] = user
         return users
 
-    def load_all(self) -> tuple[
-        dict[str, Patient],
-        dict[str, Provider],
-        dict[str, Department],
-        dict[str, Encounter],
-        dict[str, Procedure],
-        dict[str, Note],
-    ]:
+    def load_all(self):
         patients = self.load_patients()
         providers = self.load_providers()
         departments = self.load_departments()
@@ -68,7 +61,7 @@ class DataLoader:
         self.link_objects(patients, providers, departments, encounters, procedures, notes)
         return patients, providers, departments, encounters, procedures, notes
 
-    def load_patients(self) -> dict[str, Patient]:
+    def load_patients(self):
         patients: dict[str, Patient] = {}
         with open(self.path("patients.csv"), newline="", encoding="utf-8") as file:
             for row in csv.DictReader(file):
@@ -85,7 +78,7 @@ class DataLoader:
                 patients[patient.patient_id] = patient
         return patients
 
-    def load_providers(self) -> dict[str, Provider]:
+    def load_providers(self):
         providers: dict[str, Provider] = {}
         with open(self.path("providers.csv"), newline="", encoding="utf-8") as file:
             for row in csv.DictReader(file):
@@ -98,7 +91,7 @@ class DataLoader:
                 providers[provider.provider_id] = provider
         return providers
 
-    def load_departments(self) -> dict[str, Department]:
+    def load_departments(self):
         departments: dict[str, Department] = {}
         with open(self.path("departments.csv"), newline="", encoding="utf-8") as file:
             for row in csv.DictReader(file):
@@ -110,7 +103,7 @@ class DataLoader:
                 departments[department.department_id] = department
         return departments
 
-    def load_encounters(self) -> dict[str, Encounter]:
+    def load_encounters(self):
         encounters: dict[str, Encounter] = {}
         with open(self.path("encounters.csv"), newline="", encoding="utf-8") as file:
             for row in csv.DictReader(file):
@@ -125,7 +118,7 @@ class DataLoader:
                 encounters[encounter.encounter_id] = encounter
         return encounters
 
-    def load_procedures(self) -> dict[str, Procedure]:
+    def load_procedures(self):
         procedures: dict[str, Procedure] = {}
         with open(self.path("procedures.csv"), newline="", encoding="utf-8") as file:
             for row in csv.DictReader(file):
@@ -140,7 +133,7 @@ class DataLoader:
                 procedures[procedure.procedure_id] = procedure
         return procedures
 
-    def load_notes(self) -> dict[str, Note]:
+    def load_notes(self):
         notes: dict[str, Note] = {}
         with open(self.path("notes.csv"), newline="", encoding="utf-8") as file:
             for row in csv.DictReader(file):
@@ -163,7 +156,7 @@ class DataLoader:
         encounters: dict[str, Encounter],
         procedures: dict[str, Procedure],
         notes: dict[str, Note],
-    ) -> None:
+    ):
         # Rebuild object links after loading or modifying CSV-backed records.
         for patient in patients.values():
             patient.encounters.clear()
@@ -202,14 +195,14 @@ class DataLoader:
         encounters: dict[str, Encounter],
         procedures: dict[str, Procedure],
         notes: dict[str, Note],
-    ) -> None:
+    ):
         # Only patient-related files change during add/remove operations.
         self.write_rows("patients.csv", PATIENT_FIELDS, [p.to_csv_row() for p in sorted(patients.values(), key=lambda x: x.patient_id)])
         self.write_rows("encounters.csv", ENCOUNTER_FIELDS, [e.to_csv_row() for e in sorted(encounters.values(), key=lambda x: x.encounter_id)])
         self.write_rows("procedures.csv", PROCEDURE_FIELDS, [p.to_csv_row() for p in sorted(procedures.values(), key=lambda x: x.procedure_id)])
         self.write_rows("notes.csv", NOTE_FIELDS, [n.to_csv_row() for n in sorted(notes.values(), key=lambda x: x.note_id)])
 
-    def write_rows(self, filename: str, fieldnames: list[str], rows: list[dict[str, object]]) -> None:
+    def write_rows(self, filename: str, fieldnames: list[str], rows: list[dict[str, object]]):
         self.data_folder.mkdir(parents=True, exist_ok=True)
         with open(self.path(filename), "w", newline="", encoding="utf-8") as file:
             writer = csv.DictWriter(file, fieldnames=fieldnames)

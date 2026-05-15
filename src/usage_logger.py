@@ -11,7 +11,7 @@ class UsageLogger:
 
     FIELDNAMES = ["timestamp", "username", "role", "action", "status", "detail"]
 
-    def __init__(self, output_folder: str = "output") -> None:
+    def __init__(self, output_folder: str = "output"):
         self.output_folder = Path(output_folder)
         self.output_folder.mkdir(parents=True, exist_ok=True)
         self.log_path = self.output_folder / "usage_statistics.csv"
@@ -20,7 +20,7 @@ class UsageLogger:
                 writer = csv.DictWriter(file, fieldnames=self.FIELDNAMES)
                 writer.writeheader()
 
-    def log(self, username: str, role: str, action: str, status: str, detail: str = "") -> None:
+    def log(self, username: str, role: str, action: str, status: str, detail: str = ""):
         with open(self.log_path, "a", newline="", encoding="utf-8") as file:
             writer = csv.DictWriter(file, fieldnames=self.FIELDNAMES)
             writer.writerow(
