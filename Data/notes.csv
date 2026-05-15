@@ -1,0 +1,351 @@
+note_id,patient_id,encounter_id,note_date,note_type,note_text
+N1,P155,E210,2025-12-01,Progress,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N2,P182,E313,2026-05-08,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N3,P122,E62,2025-11-25,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N4,P48,E235,2025-06-26,Discharge,Provider discussed test results and answered patient questions.
+N5,P135,E174,2026-03-26,Progress,"Care team reviewed patient history, current concerns, and treatment options."
+N6,P34,E24,2025-08-05,Emergency,Provider discussed test results and answered patient questions.
+N7,P93,E302,2026-05-08,Progress,"Care team reviewed patient history, current concerns, and treatment options."
+N8,P48,E235,2025-06-26,Emergency,Patient tolerated the visit well. Follow-up appointment recommended.
+N9,P189,E259,2026-03-23,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N10,P184,E3,2025-07-10,Oncology,Provider discussed test results and answered patient questions.
+N11,P102,E25,2025-12-07,Oncology,"Care team reviewed patient history, current concerns, and treatment options."
+N12,P14,E300,2025-06-18,Consult,Patient tolerated the visit well. Follow-up appointment recommended.
+N13,P42,E400,2025-11-03,Discharge,Provider discussed test results and answered patient questions.
+N14,P22,E297,2025-06-18,Discharge,Provider discussed test results and answered patient questions.
+N15,P77,E66,2025-07-30,Progress,"Care team reviewed patient history, current concerns, and treatment options."
+N16,P134,E337,2026-01-16,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N17,P44,E165,2025-11-15,Oncology,"Care team reviewed patient history, current concerns, and treatment options."
+N18,P7,E215,2025-08-06,Oncology,Provider discussed test results and answered patient questions.
+N19,P43,E391,2025-12-02,Discharge,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N20,P43,E204,2026-04-12,Nursing,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N21,P166,E232,2025-11-20,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N22,P163,E212,2025-05-24,Oncology,Provider discussed test results and answered patient questions.
+N23,P45,E384,2025-12-03,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N24,P72,E360,2025-12-25,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N25,P5,E365,2025-08-09,Emergency,Patient tolerated the visit well. Follow-up appointment recommended.
+N26,P64,E324,2025-12-01,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N27,P93,E108,2025-06-14,Oncology,Provider discussed test results and answered patient questions.
+N28,P116,E149,2026-04-04,Emergency,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N29,P92,E345,2025-08-13,Discharge,Provider discussed test results and answered patient questions.
+N30,P163,E333,2025-11-18,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N31,P196,E278,2025-05-30,Emergency,Provider discussed test results and answered patient questions.
+N32,P165,E166,2025-08-10,Emergency,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N33,P85,E390,2026-03-03,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N34,P37,E246,2025-05-24,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N35,P60,E342,2025-12-26,Emergency,"Care team reviewed patient history, current concerns, and treatment options."
+N36,P68,E346,2025-09-19,Emergency,Patient tolerated the visit well. Follow-up appointment recommended.
+N37,P106,E147,2025-07-31,Consult,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N38,P64,E268,2026-03-08,Progress,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N39,P79,E196,2026-05-12,Discharge,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N40,P120,E344,2025-09-26,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N41,P194,E137,2026-01-23,Discharge,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N42,P8,E350,2026-02-14,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N43,P51,E32,2026-01-06,Emergency,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N44,P83,E105,2025-09-12,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N45,P5,E184,2025-12-04,Consult,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N46,P110,E316,2025-11-24,Emergency,Provider discussed test results and answered patient questions.
+N47,P31,E288,2025-11-20,Discharge,Provider discussed test results and answered patient questions.
+N48,P105,E332,2026-05-11,Oncology,"Care team reviewed patient history, current concerns, and treatment options."
+N49,P1,E122,2026-01-04,Oncology,Provider discussed test results and answered patient questions.
+N50,P66,E148,2026-01-10,Emergency,Provider discussed test results and answered patient questions.
+N51,P102,E25,2025-12-07,Consult,"Care team reviewed patient history, current concerns, and treatment options."
+N52,P52,E214,2025-07-30,Emergency,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N53,P171,E283,2025-11-05,Progress,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N54,P19,E381,2025-11-09,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N55,P93,E318,2025-08-26,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N56,P147,E325,2026-04-05,Emergency,Provider discussed test results and answered patient questions.
+N57,P105,E332,2026-05-11,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N58,P117,E280,2025-10-01,Emergency,Patient tolerated the visit well. Follow-up appointment recommended.
+N59,P4,E101,2026-02-08,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N60,P155,E151,2025-07-09,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N61,P8,E350,2026-02-14,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N62,P172,E89,2026-04-19,Emergency,Patient tolerated the visit well. Follow-up appointment recommended.
+N63,P122,E62,2025-11-25,Consult,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N64,P178,E220,2025-08-28,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N65,P103,E136,2026-04-22,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N66,P14,E300,2025-06-18,Nursing,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N67,P164,E170,2025-07-02,Consult,Provider discussed test results and answered patient questions.
+N68,P58,E80,2025-12-13,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N69,P165,E166,2025-08-10,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N70,P167,E397,2025-07-23,Emergency,Patient tolerated the visit well. Follow-up appointment recommended.
+N71,P20,E339,2025-10-25,Nursing,"Care team reviewed patient history, current concerns, and treatment options."
+N72,P176,E294,2025-07-03,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N73,P8,E38,2025-06-21,Emergency,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N74,P69,E270,2025-06-25,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N75,P16,E267,2025-10-16,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N76,P144,E82,2025-11-17,Consult,Patient tolerated the visit well. Follow-up appointment recommended.
+N77,P56,E275,2025-10-23,Consult,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N78,P97,E179,2025-11-01,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N79,P34,E340,2025-06-09,Nursing,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N80,P20,E185,2025-10-23,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N81,P76,E386,2025-05-27,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N82,P22,E244,2025-07-16,Oncology,Provider discussed test results and answered patient questions.
+N83,P158,E5,2025-11-15,Progress,Provider discussed test results and answered patient questions.
+N84,P168,E178,2026-04-03,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N85,P52,E329,2025-11-07,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N86,P197,E125,2026-03-06,Progress,Provider discussed test results and answered patient questions.
+N87,P44,E165,2025-11-15,Consult,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N88,P143,E198,2025-09-27,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N89,P196,E371,2026-04-16,Nursing,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N90,P44,E265,2025-08-12,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N91,P199,E261,2026-03-15,Consult,"Care team reviewed patient history, current concerns, and treatment options."
+N92,P7,E23,2025-09-04,Nursing,Provider discussed test results and answered patient questions.
+N93,P120,E99,2025-08-29,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N94,P103,E43,2025-11-19,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N95,P140,E396,2025-11-16,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N96,P90,E4,2025-09-29,Emergency,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N97,P93,E108,2025-06-14,Emergency,Provider discussed test results and answered patient questions.
+N98,P167,E397,2025-07-23,Discharge,Provider discussed test results and answered patient questions.
+N99,P40,E218,2025-06-11,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N100,P83,E276,2025-12-28,Emergency,Provider discussed test results and answered patient questions.
+N101,P167,E397,2025-07-23,Consult,Provider discussed test results and answered patient questions.
+N102,P68,E37,2025-07-23,Emergency,Provider discussed test results and answered patient questions.
+N103,P50,E79,2025-09-09,Progress,"Care team reviewed patient history, current concerns, and treatment options."
+N104,P8,E368,2026-01-22,Nursing,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N105,P69,E45,2026-03-13,Progress,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N106,P105,E92,2026-02-23,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N107,P68,E37,2025-07-23,Oncology,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N108,P108,E133,2025-06-10,Consult,"Care team reviewed patient history, current concerns, and treatment options."
+N109,P77,E231,2026-04-10,Emergency,"Care team reviewed patient history, current concerns, and treatment options."
+N110,P169,E222,2026-01-07,Nursing,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N111,P84,E200,2025-07-12,Emergency,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N112,P163,E274,2025-09-22,Progress,Provider discussed test results and answered patient questions.
+N113,P92,E369,2025-08-16,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N114,P47,E388,2026-04-28,Emergency,Patient tolerated the visit well. Follow-up appointment recommended.
+N115,P34,E24,2025-08-05,Emergency,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N116,P5,E184,2025-12-04,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N117,P116,E149,2026-04-04,Emergency,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N118,P112,E311,2026-03-31,Progress,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N119,P68,E392,2026-05-09,Consult,"Care team reviewed patient history, current concerns, and treatment options."
+N120,P78,E203,2025-12-28,Emergency,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N121,P159,E243,2025-09-22,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N122,P96,E113,2025-07-08,Discharge,Provider discussed test results and answered patient questions.
+N123,P100,E201,2025-10-15,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N124,P147,E325,2026-04-05,Discharge,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N125,P78,E347,2025-05-28,Emergency,Provider discussed test results and answered patient questions.
+N126,P175,E192,2026-02-08,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N127,P181,E285,2026-03-29,Discharge,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N128,P32,E22,2026-01-20,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N129,P74,E306,2025-08-28,Consult,Patient tolerated the visit well. Follow-up appointment recommended.
+N130,P34,E281,2025-05-27,Progress,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N131,P93,E108,2025-06-14,Emergency,Provider discussed test results and answered patient questions.
+N132,P46,E372,2026-02-15,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N133,P163,E212,2025-05-24,Emergency,Patient tolerated the visit well. Follow-up appointment recommended.
+N134,P113,E73,2026-05-05,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N135,P56,E114,2025-06-08,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N136,P42,E100,2025-11-26,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N137,P120,E344,2025-09-26,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N138,P151,E385,2025-06-08,Oncology,"Care team reviewed patient history, current concerns, and treatment options."
+N139,P198,E331,2025-09-04,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N140,P116,E149,2026-04-04,Emergency,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N141,P1,E129,2026-01-20,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N142,P46,E372,2026-02-15,Oncology,"Care team reviewed patient history, current concerns, and treatment options."
+N143,P164,E170,2025-07-02,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N144,P120,E344,2025-09-26,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N145,P127,E52,2025-12-21,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N146,P8,E36,2026-04-23,Discharge,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N147,P126,E249,2026-02-18,Consult,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N148,P110,E316,2025-11-24,Emergency,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N149,P85,E356,2026-03-28,Oncology,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N150,P27,E290,2026-03-23,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N151,P51,E162,2026-02-25,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N152,P184,E3,2025-07-10,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N153,P56,E114,2025-06-08,Emergency,Provider discussed test results and answered patient questions.
+N154,P52,E329,2025-11-07,Consult,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N155,P20,E185,2025-10-23,Discharge,Provider discussed test results and answered patient questions.
+N156,P10,E376,2025-09-05,Nursing,"Care team reviewed patient history, current concerns, and treatment options."
+N157,P110,E237,2025-07-15,Consult,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N158,P167,E397,2025-07-23,Nursing,"Care team reviewed patient history, current concerns, and treatment options."
+N159,P171,E283,2025-11-05,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N160,P198,E331,2025-09-04,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N161,P105,E144,2025-10-13,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N162,P4,E101,2026-02-08,Nursing,Provider discussed test results and answered patient questions.
+N163,P1,E321,2025-08-27,Progress,Provider discussed test results and answered patient questions.
+N164,P124,E39,2025-12-11,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N165,P64,E324,2025-12-01,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N166,P22,E297,2025-06-18,Consult,Patient tolerated the visit well. Follow-up appointment recommended.
+N167,P120,E109,2026-03-15,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N168,P18,E134,2026-01-29,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N169,P151,E242,2025-10-26,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N170,P112,E188,2026-03-25,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N171,P140,E396,2025-11-16,Oncology,Provider discussed test results and answered patient questions.
+N172,P116,E149,2026-04-04,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N173,P69,E257,2026-03-17,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N174,P43,E204,2026-04-12,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N175,P20,E6,2026-04-15,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N176,P33,E315,2025-11-05,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N177,P47,E388,2026-04-28,Oncology,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N178,P117,E229,2025-11-20,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N179,P27,E290,2026-03-23,Oncology,Provider discussed test results and answered patient questions.
+N180,P121,E75,2025-07-05,Emergency,Provider discussed test results and answered patient questions.
+N181,P125,E248,2026-02-08,Nursing,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N182,P96,E113,2025-07-08,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N183,P78,E33,2025-06-28,Nursing,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N184,P107,E120,2025-08-25,Progress,Provider discussed test results and answered patient questions.
+N185,P61,E106,2025-10-30,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N186,P23,E199,2026-05-01,Consult,"Care team reviewed patient history, current concerns, and treatment options."
+N187,P34,E24,2025-08-05,Progress,Provider discussed test results and answered patient questions.
+N188,P165,E166,2025-08-10,Progress,Provider discussed test results and answered patient questions.
+N189,P16,E267,2025-10-16,Emergency,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N190,P181,E380,2025-07-18,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N191,P118,E279,2025-06-28,Oncology,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N192,P76,E193,2025-07-02,Emergency,"Care team reviewed patient history, current concerns, and treatment options."
+N193,P112,E188,2026-03-25,Oncology,Provider discussed test results and answered patient questions.
+N194,P19,E40,2025-09-24,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N195,P76,E193,2025-07-02,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N196,P159,E208,2025-11-25,Nursing,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N197,P116,E250,2025-12-04,Consult,Patient tolerated the visit well. Follow-up appointment recommended.
+N198,P90,E4,2025-09-29,Oncology,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N199,P101,E226,2025-11-04,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N200,P19,E40,2025-09-24,Oncology,Provider discussed test results and answered patient questions.
+N201,P105,E144,2025-10-13,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N202,P127,E96,2025-10-23,Discharge,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N203,P84,E309,2025-08-13,Emergency,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N204,P20,E339,2025-10-25,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N205,P164,E170,2025-07-02,Emergency,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N206,P36,E247,2025-07-13,Emergency,"Care team reviewed patient history, current concerns, and treatment options."
+N207,P37,E246,2025-05-24,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N208,P174,E83,2025-07-25,Emergency,"Care team reviewed patient history, current concerns, and treatment options."
+N209,P36,E12,2025-07-25,Discharge,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N210,P77,E66,2025-07-30,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N211,P174,E83,2025-07-25,Discharge,Provider discussed test results and answered patient questions.
+N212,P36,E263,2025-07-03,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N213,P144,E76,2026-01-28,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N214,P108,E133,2025-06-10,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N215,P159,E208,2025-11-25,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N216,P103,E327,2026-04-21,Progress,Provider discussed test results and answered patient questions.
+N217,P92,E373,2025-05-22,Emergency,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N218,P28,E44,2025-07-31,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N219,P112,E311,2026-03-31,Consult,"Care team reviewed patient history, current concerns, and treatment options."
+N220,P158,E88,2026-03-20,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N221,P80,E308,2026-04-02,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N222,P90,E393,2026-04-10,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N223,P149,E338,2026-04-01,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N224,P66,E86,2025-06-13,Emergency,Provider discussed test results and answered patient questions.
+N225,P21,E176,2025-10-23,Consult,Patient tolerated the visit well. Follow-up appointment recommended.
+N226,P108,E303,2025-07-27,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N227,P40,E194,2025-12-28,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N228,P74,E56,2025-08-04,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N229,P64,E268,2026-03-08,Oncology,Provider discussed test results and answered patient questions.
+N230,P7,E215,2025-08-06,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N231,P101,E50,2026-03-29,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N232,P33,E315,2025-11-05,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N233,P149,E273,2025-11-28,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N234,P49,E48,2025-12-05,Consult,Provider discussed test results and answered patient questions.
+N235,P173,E67,2025-11-26,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N236,P76,E1,2025-08-08,Emergency,Provider discussed test results and answered patient questions.
+N237,P138,E221,2025-05-20,Oncology,"Care team reviewed patient history, current concerns, and treatment options."
+N238,P163,E190,2026-04-29,Progress,Provider discussed test results and answered patient questions.
+N239,P178,E272,2025-12-23,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N240,P36,E247,2025-07-13,Consult,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N241,P93,E302,2026-05-08,Emergency,Provider discussed test results and answered patient questions.
+N242,P36,E295,2026-03-24,Progress,"Care team reviewed patient history, current concerns, and treatment options."
+N243,P199,E69,2025-06-13,Nursing,"Care team reviewed patient history, current concerns, and treatment options."
+N244,P90,E393,2026-04-10,Discharge,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N245,P77,E146,2026-01-19,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N246,P155,E210,2025-12-01,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N247,P184,E3,2025-07-10,Emergency,Provider discussed test results and answered patient questions.
+N248,P90,E4,2025-09-29,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N249,P12,E61,2026-04-24,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N250,P76,E193,2025-07-02,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N251,P51,E353,2026-03-09,Nursing,"Care team reviewed patient history, current concerns, and treatment options."
+N252,P146,E186,2026-01-11,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N253,P154,E219,2025-09-27,Emergency,Patient tolerated the visit well. Follow-up appointment recommended.
+N254,P185,E130,2025-06-04,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N255,P36,E217,2025-09-01,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N256,P89,E314,2025-09-02,Nursing,Provider discussed test results and answered patient questions.
+N257,P43,E204,2026-04-12,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N258,P171,E283,2025-11-05,Oncology,"Care team reviewed patient history, current concerns, and treatment options."
+N259,P105,E92,2026-02-23,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N260,P181,E285,2026-03-29,Consult,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N261,P132,E158,2025-11-11,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N262,P167,E397,2025-07-23,Emergency,"Care team reviewed patient history, current concerns, and treatment options."
+N263,P57,E377,2025-07-10,Discharge,Provider discussed test results and answered patient questions.
+N264,P12,E61,2026-04-24,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N265,P117,E229,2025-11-20,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N266,P127,E52,2025-12-21,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N267,P185,E206,2026-01-08,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N268,P33,E315,2025-11-05,Emergency,Provider discussed test results and answered patient questions.
+N269,P128,E362,2025-12-14,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N270,P84,E200,2025-07-12,Emergency,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N271,P64,E47,2025-10-12,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N272,P80,E308,2026-04-02,Consult,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N273,P78,E33,2025-06-28,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N274,P163,E190,2026-04-29,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N275,P75,E20,2025-08-10,Emergency,"Care team reviewed patient history, current concerns, and treatment options."
+N276,P185,E206,2026-01-08,Oncology,Provider discussed test results and answered patient questions.
+N277,P16,E267,2025-10-16,Nursing,Provider discussed test results and answered patient questions.
+N278,P74,E306,2025-08-28,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N279,P84,E328,2025-12-06,Consult,"Care team reviewed patient history, current concerns, and treatment options."
+N280,P20,E6,2026-04-15,Discharge,Provider discussed test results and answered patient questions.
+N281,P69,E266,2025-07-25,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N282,P45,E18,2025-09-25,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N283,P44,E265,2025-08-12,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N284,P33,E315,2025-11-05,Discharge,Provider discussed test results and answered patient questions.
+N285,P171,E19,2025-12-02,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N286,P183,E336,2026-03-03,Progress,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N287,P69,E45,2026-03-13,Nursing,"Care team reviewed patient history, current concerns, and treatment options."
+N288,P166,E181,2025-10-04,Emergency,"Care team reviewed patient history, current concerns, and treatment options."
+N289,P159,E208,2025-11-25,Oncology,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N290,P69,E266,2025-07-25,Progress,Provider discussed test results and answered patient questions.
+N291,P159,E361,2025-07-04,Progress,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N292,P168,E282,2026-03-28,Nursing,Provider discussed test results and answered patient questions.
+N293,P114,E287,2025-05-31,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N294,P168,E178,2026-04-03,Nursing,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N295,P112,E311,2026-03-31,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N296,P35,E207,2026-03-21,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N297,P18,E134,2026-01-29,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N298,P68,E260,2025-09-26,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N299,P8,E38,2025-06-21,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N300,P135,E175,2025-07-01,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N301,P71,E132,2026-02-24,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N302,P1,E129,2026-01-20,Emergency,"Care team reviewed patient history, current concerns, and treatment options."
+N303,P40,E194,2025-12-28,Oncology,"Care team reviewed patient history, current concerns, and treatment options."
+N304,P43,E395,2025-10-12,Discharge,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N305,P9,E398,2026-04-07,Consult,Provider discussed test results and answered patient questions.
+N306,P189,E236,2026-04-30,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N307,P36,E247,2025-07-13,Progress,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N308,P160,E35,2025-06-11,Consult,Provider discussed test results and answered patient questions.
+N309,P96,E113,2025-07-08,Emergency,Provider discussed test results and answered patient questions.
+N310,P30,E118,2025-09-30,Nursing,"Care team reviewed patient history, current concerns, and treatment options."
+N311,P166,E181,2025-10-04,Oncology,Patient tolerated the visit well. Follow-up appointment recommended.
+N312,P158,E5,2025-11-15,Emergency,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N313,P138,E128,2026-02-12,Nursing,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N314,P124,E205,2025-12-12,Emergency,Provider discussed test results and answered patient questions.
+N315,P21,E176,2025-10-23,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N316,P105,E92,2026-02-23,Consult,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N317,P59,E182,2026-04-23,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N318,P60,E138,2025-12-17,Discharge,Provider discussed test results and answered patient questions.
+N319,P8,E350,2026-02-14,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N320,P158,E378,2025-11-26,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N321,P57,E377,2025-07-10,Discharge,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N322,P61,E106,2025-10-30,Discharge,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N323,P138,E128,2026-02-12,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N324,P58,E80,2025-12-13,Progress,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N325,P124,E41,2025-10-14,Emergency,Provider discussed test results and answered patient questions.
+N326,P107,E253,2025-09-05,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N327,P68,E392,2026-05-09,Oncology,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N328,P36,E247,2025-07-13,Nursing,Patient tolerated the visit well. Follow-up appointment recommended.
+N329,P51,E162,2026-02-25,Consult,Patient tolerated the visit well. Follow-up appointment recommended.
+N330,P71,E141,2025-12-12,Consult,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N331,P68,E392,2026-05-09,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N332,P43,E204,2026-04-12,Discharge,Patient tolerated the visit well. Follow-up appointment recommended.
+N333,P77,E66,2025-07-30,Progress,Patient tolerated the visit well. Follow-up appointment recommended.
+N334,P36,E217,2025-09-01,Consult,Patient tolerated the visit well. Follow-up appointment recommended.
+N335,P52,E17,2025-09-05,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N336,P44,E202,2025-08-21,Emergency,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.
+N337,P48,E235,2025-06-26,Progress,Provider discussed test results and answered patient questions.
+N338,P69,E266,2025-07-25,Consult,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N339,P51,E353,2026-03-09,Progress,Patient was evaluated during this encounter. Symptoms were reviewed and care plan was discussed.
+N340,P68,E346,2025-09-19,Discharge,"Care team reviewed patient history, current concerns, and treatment options."
+N341,P169,E298,2026-05-01,Progress,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N342,P146,E186,2026-01-11,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N343,P127,E96,2025-10-23,Oncology,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N344,P1,E122,2026-01-04,Nursing,"Care team reviewed patient history, current concerns, and treatment options."
+N345,P89,E314,2025-09-02,Nursing,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N346,P45,E95,2026-04-25,Consult,"Care team reviewed patient history, current concerns, and treatment options."
+N347,P93,E108,2025-06-14,Consult,Provider discussed test results and answered patient questions.
+N348,P76,E386,2025-05-27,Nursing,Clinical assessment completed. Patient advised to return if symptoms worsen.
+N349,P185,E206,2026-01-08,Nursing,"Care team reviewed patient history, current concerns, and treatment options."
+N350,P194,E93,2026-02-01,Oncology,Patient reports ongoing symptoms. Medication and follow-up instructions were provided.

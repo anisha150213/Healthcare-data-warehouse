@@ -1,0 +1,26 @@
+Clinical Data Warehouse Key Statistics
+======================================
+Patients: 200
+Providers: 20
+Departments: 4
+Encounters: 400
+Procedures: 250
+Clinical notes: 350
+
+Patient summary:
+Average age: 55.1
+Average BMI: 28.9
+Average A1c: 7.3
+
+Gender counts:
+Female: 75
+Male: 66
+Non-binary: 59
+
+Encounters by department:
+D1 - Cardiology: 87
+D2 - Primary Care: 110
+D3 - Endocrinology: 98
+D4 - Pulmonology: 105
+
+Eligible patients: 18
